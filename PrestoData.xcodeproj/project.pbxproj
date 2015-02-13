@@ -1,0 +1,373 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE11CF3E1A8E691A00EE9FCB /* PrestoData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE11CF3D1A8E691A00EE9FCB /* PrestoData.h */; };
+		CE11CF401A8E691A00EE9FCB /* PrestoData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11CF3F1A8E691A00EE9FCB /* PrestoData.m */; };
+		CE11CF461A8E691A00EE9FCB /* libPrestoData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE11CF471A8E691A00EE9FCB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE11CF321A8E691A00EE9FCB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE11CF391A8E691A00EE9FCB;
+			remoteInfo = PrestoData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE11CF381A8E691A00EE9FCB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CE11CF3E1A8E691A00EE9FCB /* PrestoData.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPrestoData.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE11CF3D1A8E691A00EE9FCB /* PrestoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrestoData.h; sourceTree = "<group>"; };
+		CE11CF3F1A8E691A00EE9FCB /* PrestoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrestoData.m; sourceTree = "<group>"; };
+		CE11CF451A8E691A00EE9FCB /* PrestoDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrestoDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE11CF4B1A8E691A00EE9FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE11CF371A8E691A00EE9FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE11CF421A8E691A00EE9FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE11CF461A8E691A00EE9FCB /* libPrestoData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE11CF311A8E691A00EE9FCB = {
+			isa = PBXGroup;
+			children = (
+				CE11CF3C1A8E691A00EE9FCB /* PrestoData */,
+				CE11CF491A8E691A00EE9FCB /* PrestoDataTests */,
+				CE11CF3B1A8E691A00EE9FCB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE11CF3B1A8E691A00EE9FCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */,
+				CE11CF451A8E691A00EE9FCB /* PrestoDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE11CF3C1A8E691A00EE9FCB /* PrestoData */ = {
+			isa = PBXGroup;
+			children = (
+				CE11CF3D1A8E691A00EE9FCB /* PrestoData.h */,
+				CE11CF3F1A8E691A00EE9FCB /* PrestoData.m */,
+			);
+			path = PrestoData;
+			sourceTree = "<group>";
+		};
+		CE11CF491A8E691A00EE9FCB /* PrestoDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE11CF4A1A8E691A00EE9FCB /* Supporting Files */,
+			);
+			path = PrestoDataTests;
+			sourceTree = "<group>";
+		};
+		CE11CF4A1A8E691A00EE9FCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE11CF4B1A8E691A00EE9FCB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE11CF391A8E691A00EE9FCB /* PrestoData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE11CF4E1A8E691A00EE9FCB /* Build configuration list for PBXNativeTarget "PrestoData" */;
+			buildPhases = (
+				CE11CF361A8E691A00EE9FCB /* Sources */,
+				CE11CF371A8E691A00EE9FCB /* Frameworks */,
+				CE11CF381A8E691A00EE9FCB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrestoData;
+			productName = PrestoData;
+			productReference = CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CE11CF441A8E691A00EE9FCB /* PrestoDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE11CF511A8E691A00EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataTests" */;
+			buildPhases = (
+				CE11CF411A8E691A00EE9FCB /* Sources */,
+				CE11CF421A8E691A00EE9FCB /* Frameworks */,
+				CE11CF431A8E691A00EE9FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE11CF481A8E691A00EE9FCB /* PBXTargetDependency */,
+			);
+			name = PrestoDataTests;
+			productName = PrestoDataTests;
+			productReference = CE11CF451A8E691A00EE9FCB /* PrestoDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE11CF321A8E691A00EE9FCB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Daniel Hall";
+				TargetAttributes = {
+					CE11CF391A8E691A00EE9FCB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CE11CF441A8E691A00EE9FCB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = CE11CF351A8E691A00EE9FCB /* Build configuration list for PBXProject "PrestoData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE11CF311A8E691A00EE9FCB;
+			productRefGroup = CE11CF3B1A8E691A00EE9FCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE11CF391A8E691A00EE9FCB /* PrestoData */,
+				CE11CF441A8E691A00EE9FCB /* PrestoDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE11CF431A8E691A00EE9FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE11CF361A8E691A00EE9FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE11CF401A8E691A00EE9FCB /* PrestoData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE11CF411A8E691A00EE9FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE11CF481A8E691A00EE9FCB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE11CF391A8E691A00EE9FCB /* PrestoData */;
+			targetProxy = CE11CF471A8E691A00EE9FCB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		CE11CF4C1A8E691A00EE9FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CE11CF4D1A8E691A00EE9FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE11CF4F1A8E691A00EE9FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CE11CF501A8E691A00EE9FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CE11CF521A8E691A00EE9FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrestoDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CE11CF531A8E691A00EE9FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrestoDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE11CF351A8E691A00EE9FCB /* Build configuration list for PBXProject "PrestoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE11CF4C1A8E691A00EE9FCB /* Debug */,
+				CE11CF4D1A8E691A00EE9FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE11CF4E1A8E691A00EE9FCB /* Build configuration list for PBXNativeTarget "PrestoData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE11CF4F1A8E691A00EE9FCB /* Debug */,
+				CE11CF501A8E691A00EE9FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE11CF511A8E691A00EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE11CF521A8E691A00EE9FCB /* Debug */,
+				CE11CF531A8E691A00EE9FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE11CF321A8E691A00EE9FCB /* Project object */;
+}

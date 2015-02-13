@@ -1,5 +1,5 @@
 //
-// PrestoData.m
+// NSArray+_PrestoData_Internal.h
 //
 // Copyright (c) 2015 Daniel Hall
 //
@@ -21,11 +21,16 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#import <Foundation/Foundation.h>
 
-#import "PrestoData.h"
+/** This category is used internally by PrestoData for keeping track of the element name and parent reference for an array element */
 
-NSString *const defaultInnerValueKey = @"innerValue";
+@interface NSArray (_PrestoData_Internal)
 
-@implementation PrestoData
+/** The parent dictionary that this array is an element of */
+@property (nonatomic, weak) NSMutableDictionary *pd_parentDictionary;
+
+/** The name of the element this array is stored as */
+@property (nonatomic, copy) NSString *pd_elementName;
 
 @end

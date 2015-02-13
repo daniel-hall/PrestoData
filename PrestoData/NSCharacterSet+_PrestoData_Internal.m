@@ -1,5 +1,5 @@
 //
-// PrestoData.m
+// NSCharacterSet+_PrestoData_Internal.m
 //
 // Copyright (c) 2015 Daniel Hall
 //
@@ -21,11 +21,23 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#import "NSCharacterSet+_PrestoData_Internal.h"
 
-#import "PrestoData.h"
+@implementation NSCharacterSet (_PrestoData_Internal)
 
-NSString *const defaultInnerValueKey = @"innerValue";
++ (NSCharacterSet *)whitespaceAndCommaCharacterSet
+{
+    NSMutableCharacterSet *characterSet = [NSMutableCharacterSet whitespaceAndNewlineCharacterSet];
+    [characterSet formUnionWithCharacterSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
+    return [characterSet copy];
+}
 
-@implementation PrestoData
++ (NSCharacterSet *)whitespaceAndCommaAndAmpersandCharacterSet
+{
+    NSMutableCharacterSet *characterSet = [NSMutableCharacterSet whitespaceAndNewlineCharacterSet];
+    [characterSet formUnionWithCharacterSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
+    [characterSet formUnionWithCharacterSet:[NSCharacterSet characterSetWithCharactersInString:@"&"]];
+    return [characterSet copy];
+}
 
 @end

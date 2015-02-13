@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>PrestoDataProject.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,21 @@
 			<true/>
 		</dict>
 		<key>CE11CF441A8E691A00EE9FCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE11CF571A8EB47500EE9FCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE11CF671A8EB59200EE9FCB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CE11CF7F1A8EB59200EE9FCB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

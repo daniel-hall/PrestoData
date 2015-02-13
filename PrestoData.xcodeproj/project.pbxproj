@@ -7,18 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A249F088D8331BCA146C9920 /* NSArray+PrestoData.m in Sources */ = {isa = PBXBuildFile; fileRef = A249F09880F5661FF3BDC115 /* NSArray+PrestoData.m */; };
+		A249F15595E56ED13555C5BC /* NSArray+_PrestoData_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = A249F0F85C11AD4629DA7C85 /* NSArray+_PrestoData_Internal.m */; };
+		A249F1CA87250260209A4BF9 /* NSMutableDictionary+PrestoData.m in Sources */ = {isa = PBXBuildFile; fileRef = A249FD2148E9B5DE3D528C08 /* NSMutableDictionary+PrestoData.m */; };
+		A249F34718834847BA648B46 /* NSCharacterSet+_PrestoData_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = A249F603AE1E577F4D16685E /* NSCharacterSet+_PrestoData_Internal.m */; };
+		A249F72137550A2176E8D1E0 /* NSString+_PrestoData_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = A249F64A65D77BD1D09CFC06 /* NSString+_PrestoData_Internal.m */; };
+		A249FDE936FFBB05FAE36ADE /* NSMutableDictionary+_PrestoData_Internal.m in Sources */ = {isa = PBXBuildFile; fileRef = A249F4FE2D75B258836701BD /* NSMutableDictionary+_PrestoData_Internal.m */; };
 		CE11CF3E1A8E691A00EE9FCB /* PrestoData.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CE11CF3D1A8E691A00EE9FCB /* PrestoData.h */; };
 		CE11CF401A8E691A00EE9FCB /* PrestoData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11CF3F1A8E691A00EE9FCB /* PrestoData.m */; };
-		CE11CF461A8E691A00EE9FCB /* libPrestoData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */; };
+		CE11CF6D1A8EB59200EE9FCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11CF6C1A8EB59200EE9FCB /* main.m */; };
+		CE11CF701A8EB59200EE9FCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11CF6F1A8EB59200EE9FCB /* AppDelegate.m */; };
+		CE11CF731A8EB59200EE9FCB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE11CF721A8EB59200EE9FCB /* ViewController.m */; };
+		CE11CF761A8EB59200EE9FCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE11CF741A8EB59200EE9FCB /* Main.storyboard */; };
+		CE11CF781A8EB59200EE9FCB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE11CF771A8EB59200EE9FCB /* Images.xcassets */; };
+		CE11CF7B1A8EB59200EE9FCB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE11CF791A8EB59200EE9FCB /* LaunchScreen.xib */; };
+		CE11CF8E1A8EB5C000EE9FCB /* PrestoDataXPathTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A249FBBF335ABCE0A9ECCB4A /* PrestoDataXPathTests.m */; };
+		CE11CF8F1A8EB60C00EE9FCB /* libPrestoData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */; };
+		CE11CF901A8EB79700EE9FCB /* testWildcardElement.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F0981D6EE84583DEB88C /* testWildcardElement.xml */; };
+		CE11CF911A8EB79700EE9FCB /* testAttributeExistence.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249FEA694318B541FEAE10B /* testAttributeExistence.xml */; };
+		CE11CF921A8EB79700EE9FCB /* testWildcardAttributeExistence.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249FC99D319CF8CD47135BE /* testWildcardAttributeExistence.xml */; };
+		CE11CF931A8EB79700EE9FCB /* testLastMinusOnePredicate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F28E84C06583E57F5949 /* testLastMinusOnePredicate.xml */; };
+		CE11CF941A8EB79700EE9FCB /* testChildValueComparisonExpectedResults.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F226FD3B8D8C05CD7CE2 /* testChildValueComparisonExpectedResults.xml */; };
+		CE11CF951A8EB79700EE9FCB /* testPositionPredicate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F2FC0E233AF79D64E9BB /* testPositionPredicate.xml */; };
+		CE11CF961A8EB79700EE9FCB /* testChildValueComparisonChildren.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F8EEE82D0F59A74B5667 /* testChildValueComparisonChildren.xml */; };
+		CE11CF971A8EB79700EE9FCB /* testIndexPredicate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F2664DD9FFCDA60D43CE /* testIndexPredicate.xml */; };
+		CE11CF981A8EB79700EE9FCB /* testLastPredicate.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F0B2B68393DB87805B45 /* testLastPredicate.xml */; };
+		CE11CF991A8EB79700EE9FCB /* testAttributeComparison.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F815F01E011A2C6FB444 /* testAttributeComparison.xml */; };
+		CE11CF9C1A8EB88200EE9FCB /* test.xml in Resources */ = {isa = PBXBuildFile; fileRef = A249F99BB5D746573AC4F7AB /* test.xml */; };
+		CE11CF9D1A8EB88200EE9FCB /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = A249FA92BD5567DB96763FA6 /* test.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CE11CF471A8E691A00EE9FCB /* PBXContainerItemProxy */ = {
+		CE11CF811A8EB59200EE9FCB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CE11CF321A8E691A00EE9FCB /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CE11CF391A8E691A00EE9FCB;
-			remoteInfo = PrestoData;
+			remoteGlobalIDString = CE11CF671A8EB59200EE9FCB;
+			remoteInfo = PrestoDataProject;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -36,11 +61,46 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A249F0981D6EE84583DEB88C /* testWildcardElement.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testWildcardElement.xml; path = ../PrestoDataTests/testWildcardElement.xml; sourceTree = "<group>"; };
+		A249F09880F5661FF3BDC115 /* NSArray+PrestoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PrestoData.m"; sourceTree = "<group>"; };
+		A249F0B2B68393DB87805B45 /* testLastPredicate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testLastPredicate.xml; path = ../PrestoDataTests/testLastPredicate.xml; sourceTree = "<group>"; };
+		A249F0F85C11AD4629DA7C85 /* NSArray+_PrestoData_Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+_PrestoData_Internal.m"; sourceTree = "<group>"; };
+		A249F226FD3B8D8C05CD7CE2 /* testChildValueComparisonExpectedResults.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testChildValueComparisonExpectedResults.xml; path = ../PrestoDataTests/testChildValueComparisonExpectedResults.xml; sourceTree = "<group>"; };
+		A249F234F40481973A6DBCE3 /* NSArray+_PrestoData_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+_PrestoData_Internal.h"; sourceTree = "<group>"; };
+		A249F2422CF816F1784EA26F /* NSString+_PrestoData_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+_PrestoData_Internal.h"; sourceTree = "<group>"; };
+		A249F2664DD9FFCDA60D43CE /* testIndexPredicate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testIndexPredicate.xml; path = ../PrestoDataTests/testIndexPredicate.xml; sourceTree = "<group>"; };
+		A249F28E84C06583E57F5949 /* testLastMinusOnePredicate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testLastMinusOnePredicate.xml; path = ../PrestoDataTests/testLastMinusOnePredicate.xml; sourceTree = "<group>"; };
+		A249F2FC0E233AF79D64E9BB /* testPositionPredicate.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testPositionPredicate.xml; path = ../PrestoDataTests/testPositionPredicate.xml; sourceTree = "<group>"; };
+		A249F4FE2D75B258836701BD /* NSMutableDictionary+_PrestoData_Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+_PrestoData_Internal.m"; sourceTree = "<group>"; };
+		A249F603AE1E577F4D16685E /* NSCharacterSet+_PrestoData_Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+_PrestoData_Internal.m"; sourceTree = "<group>"; };
+		A249F64A65D77BD1D09CFC06 /* NSString+_PrestoData_Internal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+_PrestoData_Internal.m"; sourceTree = "<group>"; };
+		A249F815F01E011A2C6FB444 /* testAttributeComparison.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testAttributeComparison.xml; path = ../PrestoDataTests/testAttributeComparison.xml; sourceTree = "<group>"; };
+		A249F8EEE82D0F59A74B5667 /* testChildValueComparisonChildren.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testChildValueComparisonChildren.xml; path = ../PrestoDataTests/testChildValueComparisonChildren.xml; sourceTree = "<group>"; };
+		A249F920EEF6386CEF2F1A02 /* NSMutableDictionary+PrestoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+PrestoData.h"; sourceTree = "<group>"; };
+		A249F99BB5D746573AC4F7AB /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		A249F9D03F4DD982200F6FA6 /* NSMutableDictionary+_PrestoData_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+_PrestoData_Internal.h"; sourceTree = "<group>"; };
+		A249FA92BD5567DB96763FA6 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = test.json; sourceTree = "<group>"; };
+		A249FBBF335ABCE0A9ECCB4A /* PrestoDataXPathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrestoDataXPathTests.m; path = ../PrestoDataTests/PrestoDataXPathTests.m; sourceTree = "<group>"; };
+		A249FC1D179C06A870531EA5 /* NSArray+PrestoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PrestoData.h"; sourceTree = "<group>"; };
+		A249FC99D319CF8CD47135BE /* testWildcardAttributeExistence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testWildcardAttributeExistence.xml; path = ../PrestoDataTests/testWildcardAttributeExistence.xml; sourceTree = "<group>"; };
+		A249FD2148E9B5DE3D528C08 /* NSMutableDictionary+PrestoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+PrestoData.m"; sourceTree = "<group>"; };
+		A249FEA694318B541FEAE10B /* testAttributeExistence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testAttributeExistence.xml; path = ../PrestoDataTests/testAttributeExistence.xml; sourceTree = "<group>"; };
+		A249FEB6F05B9194EA880A7F /* NSCharacterSet+_PrestoData_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+_PrestoData_Internal.h"; sourceTree = "<group>"; };
 		CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPrestoData.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE11CF3D1A8E691A00EE9FCB /* PrestoData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrestoData.h; sourceTree = "<group>"; };
 		CE11CF3F1A8E691A00EE9FCB /* PrestoData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrestoData.m; sourceTree = "<group>"; };
-		CE11CF451A8E691A00EE9FCB /* PrestoDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrestoDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE11CF4B1A8E691A00EE9FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE11CF681A8EB59200EE9FCB /* PrestoDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrestoDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE11CF6B1A8EB59200EE9FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE11CF6C1A8EB59200EE9FCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE11CF6E1A8EB59200EE9FCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE11CF6F1A8EB59200EE9FCB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE11CF711A8EB59200EE9FCB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE11CF721A8EB59200EE9FCB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE11CF751A8EB59200EE9FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE11CF771A8EB59200EE9FCB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CE11CF7A1A8EB59200EE9FCB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CE11CF801A8EB59200EE9FCB /* PrestoDataProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrestoDataProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE11CF851A8EB59200EE9FCB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,22 +111,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE11CF421A8E691A00EE9FCB /* Frameworks */ = {
+		CE11CF651A8EB59200EE9FCB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE11CF461A8E691A00EE9FCB /* libPrestoData.a in Frameworks */,
+				CE11CF8F1A8EB60C00EE9FCB /* libPrestoData.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE11CF7D1A8EB59200EE9FCB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A249F56F08CA79D0147364BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A249F99BB5D746573AC4F7AB /* test.xml */,
+				A249FA92BD5567DB96763FA6 /* test.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		CE11CF311A8E691A00EE9FCB = {
 			isa = PBXGroup;
 			children = (
 				CE11CF3C1A8E691A00EE9FCB /* PrestoData */,
-				CE11CF491A8E691A00EE9FCB /* PrestoDataTests */,
+				CE11CF691A8EB59200EE9FCB /* PrestoDataProject */,
+				CE11CF831A8EB59200EE9FCB /* PrestoDataProjectTests */,
 				CE11CF3B1A8E691A00EE9FCB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,7 +152,8 @@
 			isa = PBXGroup;
 			children = (
 				CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */,
-				CE11CF451A8E691A00EE9FCB /* PrestoDataTests.xctest */,
+				CE11CF681A8EB59200EE9FCB /* PrestoDataProject.app */,
+				CE11CF801A8EB59200EE9FCB /* PrestoDataProjectTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,22 +163,70 @@
 			children = (
 				CE11CF3D1A8E691A00EE9FCB /* PrestoData.h */,
 				CE11CF3F1A8E691A00EE9FCB /* PrestoData.m */,
+				A249F4FE2D75B258836701BD /* NSMutableDictionary+_PrestoData_Internal.m */,
+				A249F64A65D77BD1D09CFC06 /* NSString+_PrestoData_Internal.m */,
+				A249F603AE1E577F4D16685E /* NSCharacterSet+_PrestoData_Internal.m */,
+				A249FC1D179C06A870531EA5 /* NSArray+PrestoData.h */,
+				A249F0F85C11AD4629DA7C85 /* NSArray+_PrestoData_Internal.m */,
+				A249F2422CF816F1784EA26F /* NSString+_PrestoData_Internal.h */,
+				A249FD2148E9B5DE3D528C08 /* NSMutableDictionary+PrestoData.m */,
+				A249F920EEF6386CEF2F1A02 /* NSMutableDictionary+PrestoData.h */,
+				A249F234F40481973A6DBCE3 /* NSArray+_PrestoData_Internal.h */,
+				A249F09880F5661FF3BDC115 /* NSArray+PrestoData.m */,
+				A249FEB6F05B9194EA880A7F /* NSCharacterSet+_PrestoData_Internal.h */,
+				A249F9D03F4DD982200F6FA6 /* NSMutableDictionary+_PrestoData_Internal.h */,
+				A249F56F08CA79D0147364BF /* Resources */,
 			);
 			path = PrestoData;
 			sourceTree = "<group>";
 		};
-		CE11CF491A8E691A00EE9FCB /* PrestoDataTests */ = {
+		CE11CF691A8EB59200EE9FCB /* PrestoDataProject */ = {
 			isa = PBXGroup;
 			children = (
-				CE11CF4A1A8E691A00EE9FCB /* Supporting Files */,
+				CE11CF6E1A8EB59200EE9FCB /* AppDelegate.h */,
+				CE11CF6F1A8EB59200EE9FCB /* AppDelegate.m */,
+				CE11CF711A8EB59200EE9FCB /* ViewController.h */,
+				CE11CF721A8EB59200EE9FCB /* ViewController.m */,
+				CE11CF741A8EB59200EE9FCB /* Main.storyboard */,
+				CE11CF771A8EB59200EE9FCB /* Images.xcassets */,
+				CE11CF791A8EB59200EE9FCB /* LaunchScreen.xib */,
+				CE11CF6A1A8EB59200EE9FCB /* Supporting Files */,
 			);
-			path = PrestoDataTests;
+			path = PrestoDataProject;
 			sourceTree = "<group>";
 		};
-		CE11CF4A1A8E691A00EE9FCB /* Supporting Files */ = {
+		CE11CF6A1A8EB59200EE9FCB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CE11CF4B1A8E691A00EE9FCB /* Info.plist */,
+				CE11CF6B1A8EB59200EE9FCB /* Info.plist */,
+				CE11CF6C1A8EB59200EE9FCB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE11CF831A8EB59200EE9FCB /* PrestoDataProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				A249FBBF335ABCE0A9ECCB4A /* PrestoDataXPathTests.m */,
+				CE11CF841A8EB59200EE9FCB /* Supporting Files */,
+			);
+			path = PrestoDataProjectTests;
+			sourceTree = "<group>";
+		};
+		CE11CF841A8EB59200EE9FCB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A249F0981D6EE84583DEB88C /* testWildcardElement.xml */,
+				A249FEA694318B541FEAE10B /* testAttributeExistence.xml */,
+				A249FC99D319CF8CD47135BE /* testWildcardAttributeExistence.xml */,
+				A249F28E84C06583E57F5949 /* testLastMinusOnePredicate.xml */,
+				A249F226FD3B8D8C05CD7CE2 /* testChildValueComparisonExpectedResults.xml */,
+				A249F2FC0E233AF79D64E9BB /* testPositionPredicate.xml */,
+				A249F8EEE82D0F59A74B5667 /* testChildValueComparisonChildren.xml */,
+				A249F2664DD9FFCDA60D43CE /* testIndexPredicate.xml */,
+				A249F0B2B68393DB87805B45 /* testLastPredicate.xml */,
+				A249F815F01E011A2C6FB444 /* testAttributeComparison.xml */,
+				CE11CF851A8EB59200EE9FCB /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -125,22 +251,39 @@
 			productReference = CE11CF3A1A8E691A00EE9FCB /* libPrestoData.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		CE11CF441A8E691A00EE9FCB /* PrestoDataTests */ = {
+		CE11CF671A8EB59200EE9FCB /* PrestoDataProject */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE11CF511A8E691A00EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataTests" */;
+			buildConfigurationList = CE11CF881A8EB59200EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataProject" */;
 			buildPhases = (
-				CE11CF411A8E691A00EE9FCB /* Sources */,
-				CE11CF421A8E691A00EE9FCB /* Frameworks */,
-				CE11CF431A8E691A00EE9FCB /* Resources */,
+				CE11CF641A8EB59200EE9FCB /* Sources */,
+				CE11CF651A8EB59200EE9FCB /* Frameworks */,
+				CE11CF661A8EB59200EE9FCB /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CE11CF481A8E691A00EE9FCB /* PBXTargetDependency */,
 			);
-			name = PrestoDataTests;
-			productName = PrestoDataTests;
-			productReference = CE11CF451A8E691A00EE9FCB /* PrestoDataTests.xctest */;
+			name = PrestoDataProject;
+			productName = PrestoDataProject;
+			productReference = CE11CF681A8EB59200EE9FCB /* PrestoDataProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE11CF7F1A8EB59200EE9FCB /* PrestoDataProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE11CF8B1A8EB59200EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataProjectTests" */;
+			buildPhases = (
+				CE11CF7C1A8EB59200EE9FCB /* Sources */,
+				CE11CF7D1A8EB59200EE9FCB /* Frameworks */,
+				CE11CF7E1A8EB59200EE9FCB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE11CF821A8EB59200EE9FCB /* PBXTargetDependency */,
+			);
+			name = PrestoDataProjectTests;
+			productName = PrestoDataProjectTests;
+			productReference = CE11CF801A8EB59200EE9FCB /* PrestoDataProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -155,8 +298,12 @@
 					CE11CF391A8E691A00EE9FCB = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					CE11CF441A8E691A00EE9FCB = {
+					CE11CF671A8EB59200EE9FCB = {
 						CreatedOnToolsVersion = 6.1.1;
+					};
+					CE11CF7F1A8EB59200EE9FCB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CE11CF671A8EB59200EE9FCB;
 					};
 				};
 			};
@@ -166,6 +313,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = CE11CF311A8E691A00EE9FCB;
 			productRefGroup = CE11CF3B1A8E691A00EE9FCB /* Products */;
@@ -173,16 +321,39 @@
 			projectRoot = "";
 			targets = (
 				CE11CF391A8E691A00EE9FCB /* PrestoData */,
-				CE11CF441A8E691A00EE9FCB /* PrestoDataTests */,
+				CE11CF671A8EB59200EE9FCB /* PrestoDataProject */,
+				CE11CF7F1A8EB59200EE9FCB /* PrestoDataProjectTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		CE11CF431A8E691A00EE9FCB /* Resources */ = {
+		CE11CF661A8EB59200EE9FCB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11CF761A8EB59200EE9FCB /* Main.storyboard in Resources */,
+				CE11CF7B1A8EB59200EE9FCB /* LaunchScreen.xib in Resources */,
+				CE11CF9D1A8EB88200EE9FCB /* test.json in Resources */,
+				CE11CF781A8EB59200EE9FCB /* Images.xcassets in Resources */,
+				CE11CF9C1A8EB88200EE9FCB /* test.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE11CF7E1A8EB59200EE9FCB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE11CF901A8EB79700EE9FCB /* testWildcardElement.xml in Resources */,
+				CE11CF961A8EB79700EE9FCB /* testChildValueComparisonChildren.xml in Resources */,
+				CE11CF941A8EB79700EE9FCB /* testChildValueComparisonExpectedResults.xml in Resources */,
+				CE11CF951A8EB79700EE9FCB /* testPositionPredicate.xml in Resources */,
+				CE11CF921A8EB79700EE9FCB /* testWildcardAttributeExistence.xml in Resources */,
+				CE11CF911A8EB79700EE9FCB /* testAttributeExistence.xml in Resources */,
+				CE11CF981A8EB79700EE9FCB /* testLastPredicate.xml in Resources */,
+				CE11CF971A8EB79700EE9FCB /* testIndexPredicate.xml in Resources */,
+				CE11CF931A8EB79700EE9FCB /* testLastMinusOnePredicate.xml in Resources */,
+				CE11CF991A8EB79700EE9FCB /* testAttributeComparison.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,25 +365,61 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE11CF401A8E691A00EE9FCB /* PrestoData.m in Sources */,
+				A249FDE936FFBB05FAE36ADE /* NSMutableDictionary+_PrestoData_Internal.m in Sources */,
+				A249F72137550A2176E8D1E0 /* NSString+_PrestoData_Internal.m in Sources */,
+				A249F34718834847BA648B46 /* NSCharacterSet+_PrestoData_Internal.m in Sources */,
+				A249F15595E56ED13555C5BC /* NSArray+_PrestoData_Internal.m in Sources */,
+				A249F1CA87250260209A4BF9 /* NSMutableDictionary+PrestoData.m in Sources */,
+				A249F088D8331BCA146C9920 /* NSArray+PrestoData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE11CF411A8E691A00EE9FCB /* Sources */ = {
+		CE11CF641A8EB59200EE9FCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE11CF731A8EB59200EE9FCB /* ViewController.m in Sources */,
+				CE11CF701A8EB59200EE9FCB /* AppDelegate.m in Sources */,
+				CE11CF6D1A8EB59200EE9FCB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE11CF7C1A8EB59200EE9FCB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE11CF8E1A8EB5C000EE9FCB /* PrestoDataXPathTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CE11CF481A8E691A00EE9FCB /* PBXTargetDependency */ = {
+		CE11CF821A8EB59200EE9FCB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CE11CF391A8E691A00EE9FCB /* PrestoData */;
-			targetProxy = CE11CF471A8E691A00EE9FCB /* PBXContainerItemProxy */;
+			target = CE11CF671A8EB59200EE9FCB /* PrestoDataProject */;
+			targetProxy = CE11CF811A8EB59200EE9FCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE11CF741A8EB59200EE9FCB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE11CF751A8EB59200EE9FCB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE11CF791A8EB59200EE9FCB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE11CF7A1A8EB59200EE9FCB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE11CF4C1A8E691A00EE9FCB /* Debug */ = {
@@ -307,9 +514,48 @@
 			};
 			name = Release;
 		};
-		CE11CF521A8E691A00EE9FCB /* Debug */ = {
+		CE11CF891A8EB59200EE9FCB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PrestoDataProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE11CF8A1A8EB59200EE9FCB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PrestoDataProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE11CF8C1A8EB59200EE9FCB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -318,22 +564,27 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = PrestoDataTests/Info.plist;
+				INFOPLIST_FILE = PrestoDataProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrestoDataProject.app/PrestoDataProject";
 			};
 			name = Debug;
 		};
-		CE11CF531A8E691A00EE9FCB /* Release */ = {
+		CE11CF8D1A8EB59200EE9FCB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = PrestoDataTests/Info.plist;
+				INFOPLIST_FILE = PrestoDataProjectTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PrestoDataProject.app/PrestoDataProject";
 			};
 			name = Release;
 		};
@@ -358,14 +609,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE11CF511A8E691A00EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataTests" */ = {
+		CE11CF881A8EB59200EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CE11CF521A8E691A00EE9FCB /* Debug */,
-				CE11CF531A8E691A00EE9FCB /* Release */,
+				CE11CF891A8EB59200EE9FCB /* Debug */,
+				CE11CF8A1A8EB59200EE9FCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+		};
+		CE11CF8B1A8EB59200EE9FCB /* Build configuration list for PBXNativeTarget "PrestoDataProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE11CF8C1A8EB59200EE9FCB /* Debug */,
+				CE11CF8D1A8EB59200EE9FCB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

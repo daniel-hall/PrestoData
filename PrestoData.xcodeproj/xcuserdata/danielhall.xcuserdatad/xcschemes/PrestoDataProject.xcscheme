@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE11CF391A8E691A00EE9FCB"
-               BuildableName = "libPrestoData.a"
-               BlueprintName = "PrestoData"
+               BlueprintIdentifier = "CE11CF671A8EB59200EE9FCB"
+               BuildableName = "PrestoDataProject.app"
+               BlueprintName = "PrestoDataProject"
                ReferencedContainer = "container:PrestoData.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -28,9 +28,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE11CF441A8E691A00EE9FCB"
-               BuildableName = "PrestoDataTests.xctest"
-               BlueprintName = "PrestoDataTests"
+               BlueprintIdentifier = "CE11CF7F1A8EB59200EE9FCB"
+               BuildableName = "PrestoDataProjectTests.xctest"
+               BlueprintName = "PrestoDataProjectTests"
                ReferencedContainer = "container:PrestoData.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -46,9 +46,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CE11CF571A8EB47500EE9FCB"
-               BuildableName = "PrestoData Tests.xctest"
-               BlueprintName = "PrestoData Tests"
+               BlueprintIdentifier = "CE11CF7F1A8EB59200EE9FCB"
+               BuildableName = "PrestoDataProjectTests.xctest"
+               BlueprintName = "PrestoDataProjectTests"
                ReferencedContainer = "container:PrestoData.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -56,9 +56,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE11CF391A8E691A00EE9FCB"
-            BuildableName = "libPrestoData.a"
-            BlueprintName = "PrestoData"
+            BlueprintIdentifier = "CE11CF671A8EB59200EE9FCB"
+            BuildableName = "PrestoDataProject.app"
+            BlueprintName = "PrestoDataProject"
             ReferencedContainer = "container:PrestoData.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -72,15 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE11CF391A8E691A00EE9FCB"
-            BuildableName = "libPrestoData.a"
-            BlueprintName = "PrestoData"
+            BlueprintIdentifier = "CE11CF671A8EB59200EE9FCB"
+            BuildableName = "PrestoDataProject.app"
+            BlueprintName = "PrestoDataProject"
             ReferencedContainer = "container:PrestoData.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CE11CF391A8E691A00EE9FCB"
-            BuildableName = "libPrestoData.a"
-            BlueprintName = "PrestoData"
+            BlueprintIdentifier = "CE11CF671A8EB59200EE9FCB"
+            BuildableName = "PrestoDataProject.app"
+            BlueprintName = "PrestoDataProject"
             ReferencedContainer = "container:PrestoData.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -1,5 +1,5 @@
 //
-// PrestoData.m
+// NSCharacterSet+_PrestoData_Internal.h
 //
 // Copyright (c) 2015 Daniel Hall
 //
@@ -22,10 +22,16 @@
 // SOFTWARE.
 
 
-#import "PrestoData.h"
+#import <Foundation/Foundation.h>
 
-NSString *const defaultInnerValueKey = @"innerValue";
+/** Category that provides some convenience methods to return commonly used character sets */
 
-@implementation PrestoData
+@interface NSCharacterSet (_PrestoData_Internal)
+
+/** Returns a character set consisting of all whitespace characters plus commas */
++ (NSCharacterSet *)whitespaceAndCommaCharacterSet;
+
+/** Returns a character set consisting of all whitespace characters plus commas and ampersands */
++ (NSCharacterSet *)whitespaceAndCommaAndAmpersandCharacterSet;
 
 @end

@@ -1,5 +1,5 @@
 //
-// PrestoData.m
+// NSArray+_PrestoData_Internal.m
 //
 // Copyright (c) 2015 Daniel Hall
 //
@@ -21,11 +21,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 // SOFTWARE.
 
+#import "NSArray+_PrestoData_Internal.h"
+#import "NSMutableDictionary+_PrestoData_Internal.h"
+#import "NSMutableDictionary+PrestoData.h"
+#import <objc/runtime.h>
 
-#import "PrestoData.h"
+@implementation NSArray (_PrestoData_Internal)
 
-NSString *const defaultInnerValueKey = @"innerValue";
 
-@implementation PrestoData
+- (NSMutableDictionary *)pd_parentDictionary
+{
+    return objc_getAssociatedObject(self, @selector(pd_parentDictionary));
+}
+
+
+- (void)setPd_parentDictionary:(NSDictionary *)value
+{
+    objc_setAssociatedObject(self, @selector(pd_parentDictionary), value, OBJC_ASSOCIATION_ASSIGN);
+}
+
+- (NSString *)pd_elementName
+{
+    return objc_getAssociatedObject(self, @selector(pd_elementName));
+}
+
+
+- (void)setPd_elementName:(NSString *)value
+{
+    objc_setAssociatedObject(self, @selector(pd_elementName), value, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
 
 @end

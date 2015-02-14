@@ -77,9 +77,9 @@
 		A249F815F01E011A2C6FB444 /* testAttributeComparison.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testAttributeComparison.xml; path = ../PrestoDataTests/testAttributeComparison.xml; sourceTree = "<group>"; };
 		A249F8EEE82D0F59A74B5667 /* testChildValueComparisonChildren.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testChildValueComparisonChildren.xml; path = ../PrestoDataTests/testChildValueComparisonChildren.xml; sourceTree = "<group>"; };
 		A249F920EEF6386CEF2F1A02 /* NSMutableDictionary+PrestoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+PrestoData.h"; sourceTree = "<group>"; };
-		A249F99BB5D746573AC4F7AB /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = test.xml; sourceTree = "<group>"; };
+		A249F99BB5D746573AC4F7AB /* test.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = test.xml; path = ../PrestoData/Resources/test.xml; sourceTree = "<group>"; };
 		A249F9D03F4DD982200F6FA6 /* NSMutableDictionary+_PrestoData_Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+_PrestoData_Internal.h"; sourceTree = "<group>"; };
-		A249FA92BD5567DB96763FA6 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = test.json; sourceTree = "<group>"; };
+		A249FA92BD5567DB96763FA6 /* test.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = test.json; path = ../PrestoData/Resources/test.json; sourceTree = "<group>"; };
 		A249FBBF335ABCE0A9ECCB4A /* PrestoDataXPathTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrestoDataXPathTests.m; path = ../PrestoDataTests/PrestoDataXPathTests.m; sourceTree = "<group>"; };
 		A249FC1D179C06A870531EA5 /* NSArray+PrestoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PrestoData.h"; sourceTree = "<group>"; };
 		A249FC99D319CF8CD47135BE /* testWildcardAttributeExistence.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = testWildcardAttributeExistence.xml; path = ../PrestoDataTests/testWildcardAttributeExistence.xml; sourceTree = "<group>"; };
@@ -129,15 +129,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A249F56F08CA79D0147364BF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				A249F99BB5D746573AC4F7AB /* test.xml */,
-				A249FA92BD5567DB96763FA6 /* test.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		CE11CF311A8E691A00EE9FCB = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +166,6 @@
 				A249F09880F5661FF3BDC115 /* NSArray+PrestoData.m */,
 				A249FEB6F05B9194EA880A7F /* NSCharacterSet+_PrestoData_Internal.h */,
 				A249F9D03F4DD982200F6FA6 /* NSMutableDictionary+_PrestoData_Internal.h */,
-				A249F56F08CA79D0147364BF /* Resources */,
 			);
 			path = PrestoData;
 			sourceTree = "<group>";
@@ -216,6 +206,8 @@
 		CE11CF841A8EB59200EE9FCB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A249F99BB5D746573AC4F7AB /* test.xml */,
+				A249FA92BD5567DB96763FA6 /* test.json */,
 				A249F0981D6EE84583DEB88C /* testWildcardElement.xml */,
 				A249FEA694318B541FEAE10B /* testAttributeExistence.xml */,
 				A249FC99D319CF8CD47135BE /* testWildcardAttributeExistence.xml */,

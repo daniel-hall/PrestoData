@@ -13,8 +13,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
-  s.public_header_files = 'Pod/Classes/PrestoData.h'
+  s.source_files = 'PrestoData/*.{h,m}'
+  s.public_header_files = 'PrestoData/PrestoData.h'
   s.frameworks = 'Foundation'
 end
 

@@ -24,6 +24,8 @@
 
 
 #import <Foundation/Foundation.h>
+#import "NSArray+PrestoData.h"
+#import "NSMutableDictionary+PrestoData.h"
 
 extern NSString *const defaultInnerValueKey;
 

@@ -358,8 +358,16 @@
     }
 
     else if ([trimmed pd_isJSONNumberValue]){
-        *remainingString = nil;
-        return trimmed;
+        scanner.scanLocation = 0;
+        NSRange rangeOfComma = [trimmed rangeOfString:@","];
+        if (rangeOfComma.length == 0) {
+            *remainingString = nil;
+            return trimmed;
+        }
+
+        while (endLocation == NSNotFound && [scanner scanUpToString:@"," intoString:nil]) {
+            endLocation = scanner.scanLocation;
+        }
     }
     
     else
@@ -447,6 +455,10 @@
 - (BOOL)pd_isJSONNumberValue
 {
     NSString *trimmed = [self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    trimmed = [trimmed rangeOfString:@","].length ? [trimmed substringToIndex:[trimmed rangeOfString:@","].location] : trimmed;
+    if ([trimmed isEqualToString:@"true"] || [trimmed isEqualToString:@"false"]) {
+        return YES;
+    }
     NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
     formatter.numberStyle = NSNumberFormatterDecimalStyle;
     NSNumber *number = [formatter numberFromString:trimmed];
@@ -471,10 +483,15 @@
                 [dictionary pd_addElement:dictionaryValue withName:key];
             }
         }
-        
+
         if ([value pd_isJSONArrayValue])
         {
             NSArray *arrayValue = [value pd_extractJSONArrayValue];
+
+            if (arrayValue != nil && arrayValue.count > 0) {
+                [dictionary pd_addElement:(id) [NSMutableArray array] withName:key];
+            }
+
             for (NSMutableDictionary *dictionaryElement in arrayValue)
             {
                 if (dictionaryElement)
@@ -575,7 +592,7 @@
 - (NSNumber *)pd_extractJSONNumberValue
 {
     NSString *trimmed = [[[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"\""]] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
-    return @([trimmed doubleValue]);
+    return [trimmed isEqualToString:@"true"] || [trimmed isEqualToString:@"false"] ? @([trimmed boolValue]) : @([trimmed doubleValue]);
 }
 
 

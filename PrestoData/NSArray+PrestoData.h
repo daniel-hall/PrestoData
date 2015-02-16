@@ -74,7 +74,7 @@
 
 /** Sets the value for a specific attribute on all elements contained in this array.  Returns the modified array so methods can be chained.
 *
-* @param value The new value to store.  Valid types are NSString, NSNumber, NSMutableDictionary, or NSArray.
+* @param value The new value to store.  Valid types are NSString and NSNumber
 * @param attribute The name of the attribute the value will be set for.  If the attribute already exists, its current value will be overwritten.  If an attribute with this name does not already exist, it will be created.
 * @return The modified NSArray that results from this operation
 */

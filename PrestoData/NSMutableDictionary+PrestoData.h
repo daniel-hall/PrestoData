@@ -93,7 +93,7 @@
 
 /** Sets the value for a specific key in this dictionary.  Returns the modified dictionary so methods can be chained.
 *
-* @param value The new value to store.  Valid types are NSString, NSNumber, NSMutableDictionary, or NSArray.
+* @param value The new value to store.  Valid types are NSString and NSNumber
 * @param attribute The name of the attribute the value will be set for.  If the attribute already exists, its current value will be overwritten.  If an attribute with this name does not already exist, it will be created.
 * @return The modified dictionary that results from this operation
 */

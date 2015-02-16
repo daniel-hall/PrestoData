@@ -28,4 +28,37 @@ NSString *const defaultInnerValueKey = @"innerValue";
 
 @implementation PrestoData
 
++ (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery withNewValue:(id)value forAttribute:(NSString *)attributeName {
+    id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
+    [[jsonObject pd_filterWithXPath:xpathQuery] pd_setValue:value forAttribute:attributeName];
+    return jsonObject;
+}
+
++ (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery removingAttributeNamed:(NSString *)attributeName {
+    id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
+    [[jsonObject pd_filterWithXPath:xpathQuery] pd_deleteAttribute:attributeName];
+    return jsonObject;}
+
++ (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery withNewElement:(NSMutableDictionary *)element named:(NSString *)elementName {
+    id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
+    [[jsonObject pd_filterWithXPath:xpathQuery] pd_addElement:element withName:elementName];
+    return jsonObject;
+}
+
++ (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery removingElementNamed:(NSString *)elementName {
+    id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
+    [[jsonObject pd_filterWithXPath:xpathQuery] pd_removeElementNamed:elementName];
+    return jsonObject;
+}
+
++ (id)dictionaryOrArrayLoadedFromJSON:(NSString *)filePath {
+    if (filePath == nil) {
+        return nil;
+    }
+
+    NSData *data = [NSData dataWithContentsOfFile:filePath];
+
+    return [NSMutableDictionary pd_dictionaryFromJSONData:data] ? : [NSArray pd_arrayFromJSONData:data];
+}
+
 @end

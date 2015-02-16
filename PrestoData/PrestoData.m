@@ -30,24 +30,56 @@ NSString *const defaultInnerValueKey = @"innerValue";
 
 + (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery withNewValue:(id)value forAttribute:(NSString *)attributeName {
     id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
-    [[jsonObject pd_filterWithXPath:xpathQuery] pd_setValue:value forAttribute:attributeName];
+
+    if (xpathQuery) {
+        [[jsonObject pd_filterWithXPath:xpathQuery] pd_setValue:value forAttribute:attributeName];
+    }
+
+    else {
+        [jsonObject pd_setValue:value forAttribute:attributeName];
+    }
+
     return jsonObject;
 }
 
 + (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery removingAttributeNamed:(NSString *)attributeName {
     id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
-    [[jsonObject pd_filterWithXPath:xpathQuery] pd_deleteAttribute:attributeName];
+
+    if (xpathQuery) {
+        [[jsonObject pd_filterWithXPath:xpathQuery] pd_deleteAttribute:attributeName];
+    }
+
+    else {
+        [jsonObject pd_deleteAttribute:attributeName];
+    }
+
     return jsonObject;}
 
 + (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery withNewElement:(NSMutableDictionary *)element named:(NSString *)elementName {
     id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
-    [[jsonObject pd_filterWithXPath:xpathQuery] pd_addElement:element withName:elementName];
+
+    if (xpathQuery) {
+        [[jsonObject pd_filterWithXPath:xpathQuery] pd_addElement:element withName:elementName];
+    }
+
+    else {
+        [jsonObject pd_addElement:element withName:elementName];
+    }
+
     return jsonObject;
 }
 
 + (id)objectFromJSON:(NSString *)filePath filteredBy:(NSString *)xpathQuery removingElementNamed:(NSString *)elementName {
     id jsonObject = [self dictionaryOrArrayLoadedFromJSON:filePath];
-    [[jsonObject pd_filterWithXPath:xpathQuery] pd_removeElementNamed:elementName];
+
+    if (xpathQuery) {
+        [[jsonObject pd_filterWithXPath:xpathQuery] pd_removeElementNamed:elementName];
+    }
+
+    else {
+        [jsonObject pd_removeElementNamed:elementName];
+    }
+
     return jsonObject;
 }
 

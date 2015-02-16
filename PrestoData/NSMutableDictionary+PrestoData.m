@@ -599,7 +599,12 @@
         }
 
         else if([value isKindOfClass:[NSNumber class]]) {
-            result = [result stringByAppendingString:[NSString stringWithFormat:@"%@%@\"%@\" : %@",tabs, @"\t",key, value]];
+            if ([[NSStringFromClass([value class]) lowercaseString] rangeOfString:@"bool"].length > 0) {
+                result =  [result stringByAppendingString:[NSString stringWithFormat:@"%@%@\"%@\" : %@",tabs, @"\t",key, [value boolValue] ? @"true" : @"false"]];
+            }
+            else {
+                result = [result stringByAppendingString:[NSString stringWithFormat:@"%@%@\"%@\" : %@",tabs, @"\t",key, value]];
+            }
         }
 
         else if([value isKindOfClass:[NSArray class]]) {

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'PrestoData'
-  s.version      = '0.2.1'
+  s.version      = '0.2.3'
   s.summary      = 'A utility for parsing, searching and modifying JSON and XML data'
   s.homepage     = 'https://github.com/daniel-hall/PrestoData'
 
